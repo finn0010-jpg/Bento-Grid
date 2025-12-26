@@ -23,15 +23,19 @@
 }
 
 body {
+    height: 100%;
+    background-color: hsl(0, 0%, 95%);
+    font-family: var(--font-dmsans);
+    font-family: var(--font-dmsans);
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    max-width: 375px;
+    max-width: 350px;
     width: 100%;
     margin: auto;
-    justify-content: center;
-    background-color: var(--white);
-    font-family: var(--font-dmsans);
+    align-items: center;
 }
 
 .card-one {
@@ -42,6 +46,7 @@ body {
     font-size: 2rem;
     color: var(--white);
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 2rem;
     border-radius: 10px;
 }
@@ -64,6 +69,162 @@ body {
 }
 
 .card-one img {
-    width: 50%;
+    width: 60%;
+    padding-top: 2rem;
+}
+
+.card-two {
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.card-two img {
+    width: 100%;
+}
+
+.card-two h2 {
+    font-weight: var(--fw-500);
+    line-height: 100%;
+}
+
+.card-three {
+    background-color: var(--yellow-500);
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.card-three img {
+    width: 60%;
+    margin-bottom: -40px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.card-three h2 {
+    line-height: 100%;
+    font-weight: var(--fw-500);
+}
+
+.card-four {
+    background-color: var(--purple-100);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-four img {
+    width: 100%;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-four h2 {
+    font-weight: var(--fw-500);
+    padding-top: 1rem;
+}
+
+.card-four p {
+    font-size: var(--fs-p);
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 100%;
+    font-weight: var(--fw-400);
+}
+
+.card-five {
+    background-color: var(--purple-500);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-five img {
+    width: 60%;
+}
+
+.card-five h2 {
+    color: var(--white);
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: var(--fw-500);
+    line-height: 100%;
+}
+
+.card-six {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-six img {
+    width: 50%;
+}
+
+.card-six h2 {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-p);
+    padding-bottom: 1rem;
+}
+
+.card-six span {
+    font-size: 2.5rem;
+    font-weight: var(--fw-500);
+}
+
+.card-seven {
+    background-color: var(--yellow-100);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-seven img {
+    width: 50%;
+}
+
+.card-seven h2 {
+    line-height: 100%;
+    padding-bottom: 1rem;
+    font-weight: var(--fw-500);
+}
+
+.card-seven span {
+    font-style: italic;
+    color: var(--purple-500);
+}
+
+.card-eight {
+    background-color: var(--yellow-500);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.card-eight img {
+    width: 60%;
+    padding-top: 1rem;
+}
+
+.card-eight h2 {
+    line-height: 90%;
+    font-weight: var(--fw-500);
+    font-size: 2rem;
 }
