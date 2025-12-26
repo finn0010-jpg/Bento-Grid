@@ -232,23 +232,24 @@ body {
 @media (min-width: 900px) {
     .container {
         display: grid;
+        place-items: center;
         grid-template-columns: repeat(4, auto);
         max-width: 1200px;
+        max-height: 900px;
         grid-template-rows: repeat(4, auto);
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .card-one, .card-two, .card-three, .card-four, .card-five, .card-six, .card-seven, .card-eight {
         width: 100%;
-        height: fit-content;
+        height: 100%;
         margin: auto;
         overflow: hidden;
     }
 
     .card-one {
-        grid-column-start: 2;
+        grid-column: 2 / span 2;
         grid-row: 1;
-        grid-column: span 2;
     }
 
     .card-two {
@@ -263,14 +264,12 @@ body {
 
     .card-four {
         grid-column: 4;
-        grid-row-start: 1;
-        grid-row: span 2;
+        grid-row: 1 / span 2;
     }
 
     .card-five {
-        grid-column-start: 3;
+        grid-column: 3 / span 2;
         grid-row: 3;
-        grid-column: span 2;
     }
 
     .card-six {
@@ -280,14 +279,12 @@ body {
 
     .card-seven {
         grid-column: 1;
-        grid-row-start: 1;
-        grid-row: span 2;
+        grid-row: 1 / span 2;
     }
 
     .card-eight {
         grid-column: 1;
-        grid-row-start: 3;
-        grid-row: span 2;
+        grid-row: 3 / span 2;
     }
 
 }
